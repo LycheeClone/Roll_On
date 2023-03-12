@@ -8,11 +8,13 @@ namespace PlayerControllers
     public class PlayerMovement : MonoBehaviour
     {
         private Rigidbody _playerRb;
+        public Transform playerTransform;
         [SerializeField] private float movementSpeed;
 
         private void Awake()
         {
             _playerRb = GetComponent<Rigidbody>();
+            //playerTransform = GetComponent<Transform>();
         }
 
         private void FixedUpdate()
